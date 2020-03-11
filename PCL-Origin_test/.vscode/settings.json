@@ -50,6 +50,10 @@
         "cinttypes": "cpp",
         "utility": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "string": "cpp",
+        "*.txx": "cpp",
+        "random": "cpp",
+        "core": "cpp"
     }
 }

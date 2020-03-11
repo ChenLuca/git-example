@@ -124,6 +124,19 @@ depend:
 .PHONY : ../exe/range_image_visualization/fast
 
 #=============================================================================
+# Target rules for targets named ../exe/CloudViewer
+
+# Build rule for target.
+../exe/CloudViewer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ../exe/CloudViewer
+.PHONY : ../exe/CloudViewer
+
+# fast build rule for target.
+../exe/CloudViewer/fast:
+	$(MAKE) -f CMakeFiles/../exe/CloudViewer.dir/build.make CMakeFiles/../exe/CloudViewer.dir/build
+.PHONY : ../exe/CloudViewer/fast
+
+#=============================================================================
 # Target rules for targets named ../exe/pcd_read
 
 # Build rule for target.
@@ -310,6 +323,33 @@ depend:
 	$(MAKE) -f CMakeFiles/../exe/range_image_visualization.dir/build.make CMakeFiles/../exe/range_image_visualization.dir/5.range_image_visualization/range_image_visualization.cpp.s
 .PHONY : 5.range_image_visualization/range_image_visualization.cpp.s
 
+6.CloudViewer/CloudViewer.o: 6.CloudViewer/CloudViewer.cpp.o
+
+.PHONY : 6.CloudViewer/CloudViewer.o
+
+# target to build an object file
+6.CloudViewer/CloudViewer.cpp.o:
+	$(MAKE) -f CMakeFiles/../exe/CloudViewer.dir/build.make CMakeFiles/../exe/CloudViewer.dir/6.CloudViewer/CloudViewer.cpp.o
+.PHONY : 6.CloudViewer/CloudViewer.cpp.o
+
+6.CloudViewer/CloudViewer.i: 6.CloudViewer/CloudViewer.cpp.i
+
+.PHONY : 6.CloudViewer/CloudViewer.i
+
+# target to preprocess a source file
+6.CloudViewer/CloudViewer.cpp.i:
+	$(MAKE) -f CMakeFiles/../exe/CloudViewer.dir/build.make CMakeFiles/../exe/CloudViewer.dir/6.CloudViewer/CloudViewer.cpp.i
+.PHONY : 6.CloudViewer/CloudViewer.cpp.i
+
+6.CloudViewer/CloudViewer.s: 6.CloudViewer/CloudViewer.cpp.s
+
+.PHONY : 6.CloudViewer/CloudViewer.s
+
+# target to generate assembly for a file
+6.CloudViewer/CloudViewer.cpp.s:
+	$(MAKE) -f CMakeFiles/../exe/CloudViewer.dir/build.make CMakeFiles/../exe/CloudViewer.dir/6.CloudViewer/CloudViewer.cpp.s
+.PHONY : 6.CloudViewer/CloudViewer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -319,6 +359,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ../exe/range_image_visualization"
+	@echo "... ../exe/CloudViewer"
 	@echo "... ../exe/pcd_read"
 	@echo "... ../exe/pcd_write"
 	@echo "... ../exe/narf_keypoint_extraction"
@@ -338,6 +379,9 @@ help:
 	@echo "... 5.range_image_visualization/range_image_visualization.o"
 	@echo "... 5.range_image_visualization/range_image_visualization.i"
 	@echo "... 5.range_image_visualization/range_image_visualization.s"
+	@echo "... 6.CloudViewer/CloudViewer.o"
+	@echo "... 6.CloudViewer/CloudViewer.i"
+	@echo "... 6.CloudViewer/CloudViewer.s"
 .PHONY : help
 
 

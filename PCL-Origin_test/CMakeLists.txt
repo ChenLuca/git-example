@@ -24,3 +24,9 @@ target_link_libraries (../exe/narf_keypoint_extraction ${PCL_LIBRARIES})
 
 add_executable (../exe/range_image_visualization 5.range_image_visualization/range_image_visualization.cpp)
 target_link_libraries (../exe/range_image_visualization ${PCL_LIBRARIES})
+
+add_executable (../exe/CloudViewer 6.CloudViewer/CloudViewer.cpp)
+target_link_libraries (../exe/CloudViewer ${PCL_LIBRARIES})
+
+# add_executable (../exe/pcl_visualizer_demo 7.pcl_visualizer_demo/pcl_visualizer_demo.cpp)
+# target_link_libraries (../exe/pcl_visualizer_demo ${PCL_LIBRARIES})
